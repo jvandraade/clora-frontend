@@ -1,0 +1,47 @@
+.hero-section {
+  background: linear-gradient(135deg, #d8f3dc, #95d5b2);
+  color: #fff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #081c15;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #1b4332;
+}
+
+.hero-buttons .btn-success {
+  background-color: #40916c;
+  border: none;
+}
+
+.hero-buttons .btn-outline-light {
+  color: #40916c;
+  border-color: #40916c;
+}
+
+.hero-badges .badge {
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.hero-testimonials p {
+  font-size: 0.9rem;
+  color: #081c15;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

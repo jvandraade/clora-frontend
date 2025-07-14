@@ -1,0 +1,30 @@
+.footer {
+  background-color: #081c15;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer h5 {
+  color: #95d5b2;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #d8f3dc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: #d8f3dc;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer p, .footer small {
+  color: #d8f3dc;
+  font-size: 0.9rem;
+}
