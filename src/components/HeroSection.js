@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button, Badge } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "../styles/HeroSection.css"; 
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -21,7 +22,9 @@ export default function HeroSection() {
               Descubra como nossos produtos à base de cannabis medicinal podem transformar sua saúde de forma segura, legal e natural.
             </motion.p>
             <div className="hero-buttons">
-              <Button variant="success" size="lg" className="me-3">Ver Produtos</Button>
+              <Link to="/shop" className="stretched-link">
+                <Button variant="success" size="lg" className="me-3">Ver Produtos</Button>
+              </Link>
               <Button variant="outline-light" size="lg">Saiba Mais</Button>
             </div>
             <div className="hero-badges mt-3">
@@ -36,7 +39,7 @@ export default function HeroSection() {
           </Col>
           <Col md={6}>
             <motion.img 
-              src="/images/hero-banner.jpg" 
+              src="/images/hero-image.png" 
               alt="Produtos Clora"
               className="img-fluid floating" 
               initial={{ opacity: 0 }} 

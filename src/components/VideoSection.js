@@ -7,7 +7,7 @@ export default function VideoSection() {
         <h2 className="mb-4">Explore Clora</h2>
         <div className="ratio ratio-16x9">
           <iframe 
-            src="https://www.youtube.com/embed/OEv7p13FfXI" 
+            src="https://www.youtube.com/watch?v=plJd00hPDIo&pp=ygUwdsOtZGVvIHNvYnJlIHRyYXRhbWVudG9zIG1lZGljaW5haXMgY29tIGNhbmFiYmlz" 
             title="Clora Video"
             allowFullScreen
           ></iframe>

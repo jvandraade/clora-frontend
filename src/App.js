@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./components/Cart";
 import Faq from "./components/Faq";
+import BlogPost from "./pages/BlogPost";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
@@ -39,13 +40,15 @@ export default function Blog() {
               <Card.Body className="d-flex flex-column">
                 <Card.Title>{post.title}</Card.Title>
                 <Card.Text>{post.summary}</Card.Text>
-                <Button
+                <Link to={`/blog/${post.id}`} className="stretched-link">
+                  <Button
                   variant="success"
                   className="mt-auto"
                   onClick={() => alert(`Abrir post completo: ${post.title}`)}
                 >
                   Ver mais
                 </Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
