@@ -35,17 +35,17 @@ O Clora foi desenvolvido utilizando as tecnologias mais recentes, priorizando pe
 
 ## 📁 Estrutura geral do projeto
 
-clora/
-├── public/
-│ ├── images/ # Galeria e imagens institucionais
-│ └── videos/ # Vídeos institucionais
-├── src/
-│ ├── assets/ # Imagens e mídias usadas internamente
-│ ├── components/ # Componentes reutilizáveis (Navbar, Footer, etc.)
-│ ├── pages/ # Páginas principais (Home, Shop, About, Blog, FAQ)
-│ ├── App.js # Configuração geral e rotas
-│ └── index.js # Entry point da aplicação
-└── README.md
+- clora/
+- ├── public/
+- │ ├── images/ # Galeria e imagens institucionais
+- │ └── videos/ # Vídeos institucionais
+- ├── src/
+- │ ├── assets/ # Imagens e mídias usadas internamente
+- │ ├── components/ # Componentes reutilizáveis (Navbar, Footer, etc.)
+- │ ├── pages/ # Páginas principais (Home, Shop, About, Blog, FAQ)
+- │ ├── App.js # Configuração geral e rotas
+- │ └── index.js # Entry point da aplicação
+- └── README.md
 
 ---
 
