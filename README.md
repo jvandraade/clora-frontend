@@ -71,7 +71,7 @@ O **Clora** nasceu para ser referência na venda de produtos à base de cannabis
 
 O projeto foi hospedado gratuitamente na Vercel, facilitando demonstrações e feedbacks rápidos do cliente.
 
-Acesse aqui 👉 **[clora.vercel.app](https://clora-frontend.vercel.app)** 
+Acesse aqui 👉 **[clora.vercel.app](https://clora.vercel.app)** 
 
 ---
 
