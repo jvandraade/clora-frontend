@@ -47,7 +47,7 @@ const BlogPost = () => {
 
             {/* Vídeo embutido */}
             <div className="ratio ratio-16x9 mb-4">
-              <iframe src="https://www.youtube.com/embed/your_video_id" title="Vídeo sobre cannabis medicinal" allowFullScreen></iframe>
+              <iframe src="https://www.youtube.com/embed/9MUEYd7GZ8Y" title="Vídeo sobre cannabis medicinal" allowFullScreen></iframe>
             </div>
 
             {/* Citação destacada */}
