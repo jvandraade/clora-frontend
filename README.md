@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 🌿 Clora — Plataforma de e-commerce para produtos de Cannabis Medicinal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O **Clora** é uma plataforma moderna de e-commerce desenvolvida para comercializar **produtos à base de cannabis medicinal** com foco em saúde, qualidade de vida e bem-estar.
 
-## Available Scripts
+Este projeto visa oferecer uma **experiência de compra moderna, responsiva e segura**, com design limpo e intuitivo que reforça credibilidade, além de se alinhar às boas práticas de UI/UX e LGPD.
 
-In the project directory, you can run:
+## 📝 Sobre o projeto
 
-### `npm start`
+O Clora foi idealizado como uma solução voltada exclusivamente ao **uso medicinal da cannabis**, proporcionando aos usuários:
+- Facilidade de navegação e busca de produtos
+- Visualização detalhada dos itens
+- Seção de depoimentos e avaliações reais de clientes
+- Conteúdo educativo no blog
+- Seções de perguntas frequentes (FAQ) sobre saúde, legalidade e segurança de dados
+- Informações institucionais (vídeo, galeria e equipe)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A ideia não foi construir todo o front-end neste momento, mas sim entregar um **protótipo funcional** com as principais telas, páginas e componentes prontos para validação e expansão futura.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Tecnologias e bibliotecas utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O Clora foi desenvolvido utilizando as tecnologias mais recentes, priorizando performance, reuso de componentes e modernidade:
 
-### `npm run build`
+- **React** – versão `18+`
+- **React Router DOM** – gerenciamento de rotas
+- **Bootstrap** – componentes responsivos e grid layout
+- **React Icons** – ícones modernos
+- **Styled Components** – estilização e organização de CSS em JS
+- **React Player** – para vídeos institucionais
+- **React Hooks** – para gerenciamento de estado e efeitos
+- **Markdown** – documentação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Estrutura geral do projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+clora/
+├── public/
+│ ├── images/ # Galeria e imagens institucionais
+│ └── videos/ # Vídeos institucionais
+├── src/
+│ ├── assets/ # Imagens e mídias usadas internamente
+│ ├── components/ # Componentes reutilizáveis (Navbar, Footer, etc.)
+│ ├── pages/ # Páginas principais (Home, Shop, About, Blog, FAQ)
+│ ├── App.js # Configuração geral e rotas
+│ └── index.js # Entry point da aplicação
+└── README.md
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Funcionalidades implementadas até o momento
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✅ Hero Section com animações e CTA  
+✅ Página Shop com lista de produtos e filtro por categoria  
+✅ Página About com galeria de imagens, vídeo institucional, equipe e FAQs  
+✅ Página Blog com cards, filtros e página interna de artigo  
+✅ Seção de newsletter para cadastro  
+✅ Seção de depoimentos de clientes com balões estilizados  
+✅ Footer moderno e completo com informações de contato, termos e navegação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌱 Objetivo
 
-## Learn More
+O **Clora** nasceu para ser referência na venda de produtos à base de cannabis medicinal, ajudando a **informar, educar e atender** pacientes que buscam alternativas naturais para melhorar sua saúde, sempre de forma responsável, segura e legal.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Deploy
 
-### Code Splitting
+O projeto foi hospedado gratuitamente na Vercel, facilitando demonstrações e feedbacks rápidos do cliente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Acesse aqui 👉 **[clora.vercel.app](https://clora-frontend.vercel.app)** 
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📌 Observação
 
-### Making a Progressive Web App
+Esta é apenas a **primeira versão funcional**. O projeto foi pensado para crescer, recebendo:
+- Integração com gateway de pagamento
+- Dashboard administrativo
+- Cadastro de clientes
+- APIs externas para atualização de conteúdo
+- Melhorias contínuas em UI/UX
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
