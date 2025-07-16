@@ -1,12 +1,18 @@
 import { Container, Row, Col, Card, Button, Accordion, Image } from "react-bootstrap";
 import { FaLeaf, FaHeartbeat, FaHandHoldingMedical, FaHistory, FaSmile, FaQuestionCircle, FaUsers } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import medico1 from "../assets/medico1.jpg";
+import medico2 from "../assets/medico2.jpg";
+import medico3 from "../assets/medico3.jpg";
+import medico4 from "../assets/medico4.jpg";
+import empresa from "../assets/empresa.png";
+import usomedicinal from "../assets/usomedicinal.jpg";
 
 const teamMembers = [
-  { name: "Dra. Ana Silva", role: "Farmacêutica", photo: "https://randomuser.me/api/portraits/women/68.jpg" },
-  { name: "Dr. Carlos Menezes", role: "Especialista em Cannabis Medicinal", photo: "https://randomuser.me/api/portraits/men/45.jpg" },
-  { name: "Marina Lopes", role: "Consultora de Produtos", photo: "https://randomuser.me/api/portraits/women/44.jpg" },
-  { name: "Lucas Pereira", role: "Responsável pelo Atendimento", photo: "https://randomuser.me/api/portraits/men/65.jpg" }
+  { name: "Dra. Ana Silva", role: "Farmacêutica", photo: medico1 },
+  { name: "Dr. Carlos Menezes", role: "Especialista em Cannabis Medicinal", photo: medico4 },
+  { name: "Marina Lopes", role: "Consultora de Produtos", photo: medico2 },
+  { name: "Lucas Pereira", role: "Responsável pelo Atendimento", photo: medico3 }
 ];
 
 const faqs = [
@@ -31,7 +37,7 @@ export default function About() {
           </p>
         </Col>
         <Col md={6}>
-          <Image src="https://images.unsplash.com/photo-1588776814546-f924eb0953f8?auto=format&fit=crop&w=600&q=80" rounded fluid />
+          <Image src={empresa} rounded fluid />
         </Col>
       </Row>
 
@@ -77,7 +83,7 @@ export default function About() {
           </ul>
         </Col>
         <Col md={6}>
-          <Image src="https://images.unsplash.com/photo-1588776814389-cd4a7c5d8f2c?auto=format&fit=crop&w=600&q=80" rounded fluid />
+          <Image src={usomedicinal} rounded fluid />
         </Col>
       </Row>
 
@@ -100,12 +106,14 @@ export default function About() {
           <h3 className="text-center mb-4">Galeria</h3>
           <Row>
             {[
-              "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
-              "https://images.unsplash.com/photo-1506459225024-1428097a7e18?auto=format&fit=crop&w=400&q=80",
-              "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80",
+              "https://med.uvm.edu/images/department_of_medicine_5/public-health-images/department_of_medicine_5.jpg?sfvrsn=3d0f9453_0&Width=7360&Height=3000&ScaleUp=false&Quality=High&Method=CropCropArguments&Signature=BB0B514D757E7B973246FE75EB3A49BB3EEE64BA",
+              "https://med.uvm.edu/images/cannabis_course_75/medicine-images/cannabis_course_75.jpg?sfvrsn=44009853_0&MaxWidth=600&MaxHeight=400&ScaleUp=false&Quality=High&Method=ResizeFitToAreaArguments&Signature=ACC79B601B69A9D79DB2DA9CCBF7B1B24EFAF353",
+              "https://med.uvm.edu/images/cannabis/com-top-tier-images/cannabis_-655x433.jpg?sfvrsn=45ae9553_0",
               "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80",
-              "https://images.unsplash.com/photo-1529692236671-f1a33a87e3f8?auto=format&fit=crop&w=400&q=80",
-              "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?auto=format&fit=crop&w=400&q=80"
+              "https://nowandever.olemiss.edu/wp-content/uploads/2022/01/propagating-cannabis-University-of-Mississippi-scaled.jpg",
+              "https://www.imperial.ac.uk/media/migration/faculty-of-medicine/screen-shot-2021-01-25-at-145722_1611586708442_x2.jpg",
+              "https://www.nist.gov/sites/default/files/styles/960_x_960_limit/public/images/2024/08/15/BreathStudyIllustration.png?itok=ui7nxkaD",
+              "https://static.scientificamerican.com/sciam/cache/file/DB7CB7E0-8E5E-4E70-9D2C50729F29187B_source.jpg?w=900"
             ].map((src, idx) => (
               <Col key={idx} xs={12} sm={6} md={4} className="mb-3">
                 <Image src={src} rounded fluid style={{ height: "200px", objectFit: "cover" }} />
@@ -121,7 +129,7 @@ export default function About() {
           <h3>Vídeo institucional</h3>
           <div className="ratio ratio-16x9 shadow rounded mt-3">
             <iframe
-              src="https://www.youtube.com/embed/q3J_r1tTxAk"
+              src="https://www.youtube.com/embed/480REmqbz-8"
               title="Vídeo Institucional Clora"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -196,11 +204,11 @@ export default function About() {
       {/* Call-to-action */}
       <Row className="text-center">
         <Col>
-        <Link to="/shop">
-          <Button variant="success" size="lg">
-            Conheça nossos produtos
-          </Button>
-        </Link>
+          <Link to="/shop">
+            <Button variant="success" size="lg">
+              Conheça nossos produtos
+            </Button>
+          </Link>
         </Col>
       </Row>
     </Container>

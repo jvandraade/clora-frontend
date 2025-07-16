@@ -2,6 +2,7 @@ import { Container, Row, Col, Button, Badge } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "../styles/HeroSection.css"; 
 import { Link } from "react-router-dom";
+import heroImage from "../assets/hero-image.png"
 
 export default function HeroSection() {
   return (
@@ -38,13 +39,17 @@ export default function HeroSection() {
             </div>
           </Col>
           <Col md={6}>
-            <motion.img 
-              src="/images/hero-image.png" 
-              alt="Produtos Clora"
-              className="img-fluid floating" 
+            <motion.div 
               initial={{ opacity: 0 }} 
               animate={{ opacity: 1 }} 
-              transition={{ duration: 1.2 }} />
+              transition={{ duration: 1.2 }}
+            >
+            <img 
+            src={heroImage}
+            alt="Produtos Clora"
+            className="img-fluid floating"
+            />
+            </motion.div>
           </Col>
         </Row>
       </Container>

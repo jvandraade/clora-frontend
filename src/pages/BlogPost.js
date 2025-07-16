@@ -1,6 +1,16 @@
-// src/pages/BlogPost.js
-import React from 'react';
 import { Container, Row, Col, Card, Button, Badge, Form, Carousel } from 'react-bootstrap';
+import cloraLogo from '../assets/clora_logo.png';
+import user1 from '../assets/user1.jpg';
+import product1 from '../assets/product1.jpg';
+import product4 from '../assets/product4.png';
+import pomada from '../assets/pomada.jpg';
+import saudemental from '../assets/saudemental.png';
+import cbdthc from '../assets/cdb.jpg';
+import usoresponsavel from '../assets/usoresponsavel.jpg';
+import galeria1 from '../assets/galeria1.jpg';
+import galeria2 from '../assets/galeria2.jpg';
+import galeria3 from '../assets/galeria3.jpg';
+import { Link } from 'react-router-dom';
 
 const BlogPost = () => {
   return (
@@ -23,7 +33,7 @@ const BlogPost = () => {
           <Col md={8}>
             {/* Dados do autor */}
             <div className="d-flex align-items-center mb-4">
-              <img src="/images/author.jpg" alt="Autor" width="60" height="60" className="rounded-circle me-3" />
+              <img src={cloraLogo} alt="Autor" width="60" height="60" className="rounded-circle me-3" />
               <div>
                 <strong>Clora Team</strong>
                 <p className="mb-0 text-muted" style={{ fontSize: '0.9rem' }}>Publicado em 20 de Julho de 2025</p>
@@ -48,13 +58,13 @@ const BlogPost = () => {
             {/* Galeria */}
             <Carousel className="my-4">
               <Carousel.Item>
-                <img src="/images/gallery1.jpg" className="d-block w-100" alt="..." />
+                <img src= {galeria1} className="d-block w-100" alt="..." />
               </Carousel.Item>
               <Carousel.Item>
-                <img src="/images/gallery2.jpg" className="d-block w-100" alt="..." />
+                <img src= {galeria2} className="d-block w-100" alt="..." />
               </Carousel.Item>
               <Carousel.Item>
-                <img src="/images/gallery3.jpg" className="d-block w-100" alt="..." />
+                <img src= {galeria3} className="d-block w-100" alt="..." />
               </Carousel.Item>
             </Carousel>
 
@@ -63,28 +73,34 @@ const BlogPost = () => {
             <Row>
               <Col md={4}>
                 <Card>
-                  <Card.Img variant="top" src="/images/product1.jpg" />
+                  <Card.Img variant="top" src= {product1} />
                   <Card.Body>
                     <Card.Title>Óleo CBD 500mg</Card.Title>
-                    <Button variant="success" size="sm">Ver Produto</Button>
+                    <Link to={'/shop'}>
+                      <Button variant="success" size="sm">Ver Produto</Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </Col>
               <Col md={4}>
                 <Card>
-                  <Card.Img variant="top" src="/images/product2.jpg" />
+                  <Card.Img variant="top" src= {product4} />
                   <Card.Body>
                     <Card.Title>Cápsulas de CBD</Card.Title>
-                    <Button variant="success" size="sm">Ver Produto</Button>
+                    <Link to={'/shop'}>
+                      <Button variant="success" size="sm">Ver Produto</Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </Col>
               <Col md={4}>
                 <Card>
-                  <Card.Img variant="top" src="/images/product3.jpg" />
+                  <Card.Img variant="top" src= {pomada} />
                   <Card.Body>
                     <Card.Title>Pomada CBD</Card.Title>
-                    <Button variant="success" size="sm">Ver Produto</Button>
+                    <Link to={'/shop'}>
+                      <Button variant="success" size="sm">Ver Produto</Button>
+                    </Link>
                   </Card.Body>
                 </Card>
               </Col>
@@ -95,28 +111,28 @@ const BlogPost = () => {
             <Row>
               <Col md={4}>
                 <Card>
-                  <Card.Img variant="top" src="/images/blog1.jpg" />
+                  <Card.Img variant="top" src= {saudemental}/>
                   <Card.Body>
                     <Card.Title style={{ fontSize: '1rem' }}>Cannabis e saúde mental</Card.Title>
-                    <Button variant="link" href="/blog/2">Ver mais</Button>
+                    <Button variant="link" href="/">Ver mais</Button>
                   </Card.Body>
                 </Card>
               </Col>
               <Col md={4}>
                 <Card>
-                  <Card.Img variant="top" src="/images/blog2.jpg" />
+                  <Card.Img variant="top" src= {cbdthc} />
                   <Card.Body>
                     <Card.Title style={{ fontSize: '1rem' }}>CBD vs THC</Card.Title>
-                    <Button variant="link" href="/blog/3">Ver mais</Button>
+                      <Button variant="link" href="/">Ver mais</Button>
                   </Card.Body>
                 </Card>
               </Col>
               <Col md={4}>
                 <Card>
-                  <Card.Img variant="top" src="/images/blog3.jpg" />
+                  <Card.Img variant="top" src= {usoresponsavel} />
                   <Card.Body>
                     <Card.Title style={{ fontSize: '1rem' }}>Uso responsável</Card.Title>
-                    <Button variant="link" href="/blog/4">Ver mais</Button>
+                      <Button variant="link" href="/">Ver mais</Button>
                   </Card.Body>
                 </Card>
               </Col>
@@ -125,7 +141,7 @@ const BlogPost = () => {
             {/* Sobre o autor */}
             <Card className="my-4">
               <Card.Body className="d-flex align-items-center">
-                <img src="/images/author.jpg" width="60" height="60" className="rounded-circle me-3" alt="Autor" />
+                <img src={cloraLogo} width="60" height="60" className="rounded-circle me-3" alt="Autor" />
                 <div>
                   <strong>Clora Team</strong>
                   <p className="mb-1">Equipe multidisciplinar dedicada a saúde e pesquisa sobre cannabis medicinal.</p>
@@ -145,7 +161,7 @@ const BlogPost = () => {
               <Card className="mb-3">
                 <Card.Body>
                   <div className="d-flex">
-                    <img src="/images/user1.jpg" width="40" height="40" className="rounded-circle me-2" alt="Maria"/>
+                    <img src= {user1} width="40" height="40" className="rounded-circle me-2" alt="Maria"/>
                     <div>
                       <strong>Maria</strong> <small className="text-muted"> - 2 dias atrás</small>
                       <p className="mb-0">Excelente artigo!</p>
@@ -162,17 +178,18 @@ const BlogPost = () => {
                 <Button variant="success">Enviar</Button>
               </Form>
             </section>
-
-            <Button variant="secondary" href="/blog">← Voltar ao Blog</Button>
+              <Link to="/">
+                <Button variant="secondary" href="/blog">← Voltar ao Blog</Button>
+              </Link>
           </Col>
 
           {/* Sidebar */}
           <Col md={4}>
             <h5>Posts populares</h5>
             <ul className="list-unstyled">
-              <li><a href="/blog/2">Cannabis e saúde mental</a></li>
-              <li><a href="/blog/3">CBD vs THC</a></li>
-              <li><a href="/blog/4">Uso responsável</a></li>
+              <li><a href="/">Cannabis e saúde mental</a></li>
+              <li><a href="/">CBD vs THC</a></li>
+              <li><a href="/">Uso responsável</a></li>
             </ul>
             <h5 className="mt-4">Categorias</h5>
             <Badge bg="success" className="me-1">Saúde</Badge>
@@ -181,7 +198,9 @@ const BlogPost = () => {
 
             <Card className="mt-4 p-2 text-center">
               <p className="mb-1">Quer saber mais?</p>
-              <Button variant="success" size="sm">Assine nossa Newsletter</Button>
+              <Link to={"/contact"} className="stretched-link">
+                <Button variant="success" size="sm">Assine nossa Newsletter</Button>
+              </Link>
             </Card>
           </Col>
         </Row>

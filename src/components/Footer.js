@@ -1,5 +1,6 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import '../styles/Footer.css';
+import cloralogo from '../assets/clora_logo.png'
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md={4}>
-            <img src="/images/logo-clora.png" alt="Clora" width="120" />
+            <img src= {cloralogo} alt="Clora" width="100" marginRight="20px"/>
             <p className="mt-2">Bem-estar e saúde natural com cannabis medicinal certificada.</p>
           </Col>
           <Col md={2}>

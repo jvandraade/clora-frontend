@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import { Container, Row, Col, Form, ButtonGroup, Button } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
 import ProductDetailsModal from "../components/ProductDetailsModal";
+import product1 from "../assets/product1.jpg";
+import product2 from "../assets/product2.jpg";
+import product3 from "../assets/product3.jpg";
+import product4 from "../assets/product4.png";
 
 const products = [
-  { id: 1, name: "Clora Relax Oil 500mg", image: "/images/relax-oil.jpg", shortDescription: "Óleo CBD para relaxamento.", description: "Ajuda a reduzir a ansiedade e melhora o sono.", category: "Relaxamento" },
-  { id: 2, name: "Clora Pain Relief Cream", image: "/images/pain-cream.jpg", shortDescription: "Creme tópico para dores.", description: "Alívio de dores musculares e inflamações.", category: "Alívio da Dor" },
-  { id: 3, name: "Clora Pet Care Drops", image: "/images/pet-drops.jpg", shortDescription: "Gotas para pets.", description: "Ansiedade e dores em pets.", category: "Pets" },
-  { id: 4, name: "Clora Energy Gummies", image: "/images/energy-gummies.jpg", shortDescription: "Gummies energizantes.", description: "Mais disposição com CBD e B12.", category: "Energizante" },
+  { id: 1, name: "Clora Relax Oil 500mg", image: product1 , shortDescription: "Óleo CBD para relaxamento.", description: "Ajuda a reduzir a ansiedade e melhora o sono.", category: "Relaxamento" },
+  { id: 2, name: "Clora Pain Relief Cream", image: product2, shortDescription: "Creme tópico para dores.", description: "Alívio de dores musculares e inflamações.", category: "Alívio da Dor" },
+  { id: 3, name: "Clora Pet Care Drops", image: product3, shortDescription: "Gotas para pets.", description: "Ansiedade e dores em pets.", category: "Pets" },
+  { id: 4, name: "Clora Energy Gummies", image: product4, shortDescription: "Gummies energizantes.", description: "Mais disposição com CBD e B12.", category: "Energizante" },
 ];
 
 const categories = ["Todos", ...new Set(products.map(p => p.category))];
